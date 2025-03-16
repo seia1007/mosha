@@ -1,0 +1,352 @@
+/* PC・スマホ共通スタイル */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  background-color: #f1f1f1;
+  height: 5rem;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+#menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 9%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0 3rem;
+}
+
+li {
+  margin: 0 20px;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#otoiawase {
+  background-color: black;
+  height: 100%;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#otoiawase > a > p {
+  color: white;
+  margin: 0 3rem;
+}
+
+#home > a > img {
+  width: 7rem;
+}
+
+
+/* メインビジュアル */
+main {
+  background-color: #f1f1f1;
+}
+
+#mainvisu {
+  width: 100vw;
+}
+
+#mainvisu > img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+
+/* ニュース */
+#news {
+  max-width: 1030px;
+  margin: 120px auto;
+}
+
+.taitle {
+  margin: 50px 0;
+}
+
+.taitle::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  display: block;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 3rem;
+}
+
+#kiji_matome {
+  display: flex;
+  justify-content: space-between;
+}
+
+#kiji_2 , #kiji_3{
+  border-left: solid 1px black;
+  padding-left: 20px;
+}
+
+.midashi {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.midashi > span {
+  padding: 0 5px;
+  margin: 0 1rem;
+  background-color: black;
+  color: white;
+}
+
+/* アバウト */
+#about {
+  display: flex;
+}
+
+#about-hidari {
+  width: 60%;
+}
+
+#about-hidari > img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+}
+
+#about-migi {
+  width: 40%;
+  margin: 12% 5% 0 5%;
+}
+
+
+/* ビジネス */
+#business {
+  max-width: 980px;
+  margin: 120px auto;
+}
+
+#business-nakami {
+  display: flex;
+  margin: 0 50px;  
+}
+
+#business-hidari {
+  margin: 10% 4% 0 4%;
+}
+
+#business-migi {
+  margin: 0 4% 0 4%;
+}
+
+.busi-photo > p {
+  margin: 3% 0;
+  font-weight: bold;
+}
+
+.busi-photo > p::before {
+  content: "ー";
+  margin-right: 1rem;
+  font-weight: normal;
+}
+
+
+.busi-photo > img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10%;
+}
+
+/* カンパニー */
+#company {
+  display: flex;
+  max-width: 1032px;
+  height: auto;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+#kaisya {
+  width: 55%;
+  background-color: white;
+  padding: 50px 10% 50px 7%;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+dt {
+  width: 20%;
+  padding-bottom: 0.8rem;
+}
+
+dd {
+  width: 80%;
+  padding-bottom: 0.8rem;
+}
+
+.add {
+  margin-left: 20%;
+}
+
+#kaisya-phpto {
+  width: 55%;
+}
+
+#kaisya-photo > img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-left: -100px;
+}
+
+
+/* フッター */
+footer {
+  margin: 0 10%;
+}
+
+#logo_kaisha {
+  display: flex;
+  justify-content: space-between;
+  margin: 4% 0;
+}
+
+#logo_kaisha > img {
+  width: 10%;
+}
+
+#copy > p {
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 900px) {
+  /* ヘッダー */
+  #menu {
+    display: block;
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    margin: 0 2rem 0 0;
+  }
+
+  #otoiawase {
+    display: none;
+  }
+
+  /* ニュース */
+  #news {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  #kiji_matome {
+    display: block;
+  }
+
+  #kiji_2 , #kiji_3 {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+
+  /* アバウト */
+  #about {
+    display: block;
+  }
+
+  #about-hidari {
+    width: 100%;
+  }
+
+  #about-migi {
+    width: 100%;
+    margin: 0 3%;
+  }
+
+  /* ビジネス */
+  #business {
+    padding: 0 1rem;
+  }
+  #business-nakami {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #business-hidari, #business-migi {
+    margin: 10% 0;
+  }
+
+  /* カンパニー */
+  #company {
+    display: block;
+    margin: 0 1rem;
+  }
+
+  #kaisya {
+    width: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  dl {
+    display: block;
+  }
+
+  dd ,.add{
+    margin-left: 1rem;
+  }
+
+  #kaisya-photo > img {
+    margin-left: auto;
+  }
+
+  /* フッター */
+  footer {
+    margin: 0 1rem;
+    padding-bottom: 1rem;
+  }
+
+  #logo_kaisha {
+    display: block;
+  }
+
+  #kaisyajoho {
+    margin-top: 0.2rem;
+  }
+
+  #kaisyajoho > p {
+    font-size: 0.9rem;
+  }
+}
