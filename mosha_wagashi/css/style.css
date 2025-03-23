@@ -229,6 +229,10 @@ footer {
     border-left: 1px solid black;
   }
 
+  #img-text {
+    width: 80%;
+  }
+  
   span {
     display: none;
   }
