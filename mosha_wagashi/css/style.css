@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -60,7 +61,7 @@ nav > ul > li >a {
   writing-mode: vertical-rl;
   position: absolute;
   top: 69%;
-  left: 40px;
+  left: 3%;
 }
 
 
@@ -75,10 +76,11 @@ nav > ul > li >a {
   max-width: 1024px;
   display: flex;
   flex-direction: row-reverse;
+  margin: 0 auto;
 }
 
 .taitle {
-  margin: 0 4%;
+  margin: 0 2%;
   writing-mode: vertical-rl;
 }
 
@@ -91,11 +93,12 @@ h2 {
 #nakami {
   padding-top: 80px;
   writing-mode: vertical-rl;
+  margin-right: 8%;
 }
 
 .kiji ,.kiji-2 {
   border-right: 1px solid black;
-  padding: 1rem 1.8rem;
+  padding: 1rem 10%;
 }
 
 .kiji-2 {
@@ -121,7 +124,7 @@ time {
 }
 
 #wagashi-2 {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 #img-text {
@@ -222,8 +225,16 @@ footer {
     background-image: url(../img/mainvisual-sp.jpg);
   }
 
+  .button > a {
+    top: 65%;
+  }
+
   h2 {
     font-size: 1.5rem;
+  }
+
+  .kiji ,.kiji-2 {
+    padding: 1rem 7%;
   }
 
   .kiji-none {
@@ -237,7 +248,7 @@ footer {
   #img-text {
     width: 80%;
   }
-  
+
   span {
     display: none;
   }
