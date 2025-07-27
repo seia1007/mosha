@@ -110,8 +110,16 @@ button {
   display: flex;
 }
 
+.oshirase {
+  color: #000;
+}
+
 #about {
   display: flex;
   max-width: 800px;
   justify-content: center;
+}
+
+.tugihe {
+  color: #000;
 }
