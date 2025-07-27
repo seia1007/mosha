@@ -13,6 +13,10 @@ header {
   min-height: 100vh;
 }
 
+#home {
+  position: relative;
+}
+
 #menubar {
   display: flex;
   justify-content: space-between;
@@ -45,7 +49,7 @@ nav > ul > li {
 
 a {
   text-decoration: none;
-  /* color: white; */
+  color: white;
 }
 
 button {
@@ -63,6 +67,8 @@ button {
   background-position: right;
   height: 100vh;
   margin: 0;
+  border-radius: 50% 0 0 50%;
+  
 }
 
 .carousel div.carouselImg1 {
@@ -76,4 +82,36 @@ button {
 }
 .carousel div.carouselImg4 {
   background-image: url(../imag/top_main_Carousel/TOP-Carouselgroup4.png);
+}
+
+.main-text {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  z-index: 3;
+  writing-mode: vertical-rl;
+  font-size: 2rem;
+  color: #468459;
+  letter-spacing: 1rem;
+}
+
+.main-text > span {
+  border-right: 2px dashed #468459 ;
+  
+}
+
+/* ニュース */
+#news-nakami {
+  display: flex;
+  justify-content: center;
+}
+
+.hiduke {
+  display: flex;
+}
+
+#about {
+  display: flex;
+  max-width: 800px;
+  justify-content: center;
 }
