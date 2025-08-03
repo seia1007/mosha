@@ -106,23 +106,37 @@ button {
 
 .main-text > span {
   border-right: 2px dashed #468459 ;
+  
 }
 
-.zukei {
-  position: relative;
-}
-
-.zukei-ue {
+.main-text::before {
+  content: "";
   position: absolute;
-  top: 66%;
-  left: 6%;
+  bottom: 22%;
+  left: 1%;
+  width: 200px;
+  height: 100%;
+  background-image: url(../imag/zukei/ue.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: -1;
 }
 
-.zukei-shita {
+.main-text::after {
+  content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  right: -30%;
+  width: 200px;
+  height: 100%;
+  background-image: url(../imag/zukei/shita.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: -1;
 }
+
 
 .carousel .slick-dots li button:before {
   content: '';
