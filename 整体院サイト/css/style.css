@@ -61,18 +61,25 @@ button {
   padding: 0 1rem;
 }
 
-.carousel {
+/* .carousel {
   height: 850px;
+} */
+
+.carousel {
+  width: 900px; /* 円の直径 */
+  height: 900px;
+  overflow: hidden; /* ← これで画面からはみ出す部分を隠す */
+  z-index: 1;
 }
 
 .carousel div {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: left;
+  width: 100%;
   height: 100%;
   margin: 0;
-  border-radius: 50% 0 0 50%;
-  
+  border-radius: 50%;
 }
 
 .carousel div.carouselImg1 {
@@ -89,8 +96,15 @@ button {
 }
 
 .carousel .move {
-  transform: translate(300px);
+  /* transform: translate(300px); */
   background-position-x: -200px;
+}
+
+.main-zukei {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  z-index: -1;
 }
 
 .main-text {
