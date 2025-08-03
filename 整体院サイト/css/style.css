@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -10,7 +11,6 @@ body {
 
 header {
   width: 100%;
-  min-height: 100vh;
 }
 
 #home {
@@ -61,11 +61,15 @@ button {
   padding: 0 1rem;
 }
 
+.carousel {
+  height: 850px;
+}
+
 .carousel div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   border-radius: 50% 0 0 50%;
   
@@ -84,6 +88,11 @@ button {
   background-image: url(../imag/top_main_Carousel/TOP-Carouselgroup4.png);
 }
 
+.carousel .move {
+  transform: translate(300px);
+  background-position-x: -200px;
+}
+
 .main-text {
   position: absolute;
   top: 20%;
@@ -97,17 +106,67 @@ button {
 
 .main-text > span {
   border-right: 2px dashed #468459 ;
-  
 }
+
+.zukei {
+  position: relative;
+}
+
+.zukei-ue {
+  position: absolute;
+  top: 66%;
+  left: 6%;
+}
+
+.zukei-shita {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel .slick-dots li button:before {
+  content: '';
+  background-color: #468459;
+  width: 30px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.carousel .slick-dots {
+  text-align: right;
+  bottom: 5%;
+  right: 5%;
+}
+
 
 /* ニュース */
 #news-nakami {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.midashi {
+  font-family: Noto Sans JP;
+  font-size: 24px;
+  font-weight: bold;
+  color: #468459;
+}
+
+.midashi > span {
+  font-size: 18px;
+  font-weight: normal;
+  padding-left: 0.6rem;
 }
 
 .hiduke {
   display: flex;
+  
+}
+
+.tag {
+  background-color: #468459;
+  font-weight: normal;
 }
 
 .oshirase {
