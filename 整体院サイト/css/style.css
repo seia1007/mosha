@@ -288,3 +288,31 @@ button {
 }
 
 /* コース・料金 */
+.course-nakami {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.course-icon {
+  text-align: center;
+}
+
+.course-icon::before {
+  content: url(../imag/Frame-hidari.png);
+  width: 24px;
+  height: 24px;
+}
+
+.course-icon::after {
+  content: url(../imag/Frame-migi.png);
+  width: 24px;
+  height: 24px;
+}
+
+.midashi-setumei {
+  text-align: center;
+  font-family: Noto Sans JP;
+  font-weight: 700;
+  font-size: 24px;
+  color: #468459;
+}
