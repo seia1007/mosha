@@ -376,6 +376,13 @@ button {
 
 .voice-icon {
   text-align: center;
+  /* background-color: #ffffff;
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  top: 2680px;
+  left: 30%;
+  border-radius: 50% 50% 0 0; */
 }
 
 .voice-icon::before {
@@ -435,4 +442,12 @@ button {
 .ac-nakami {
   display: flex;
   justify-content: space-around;
+}
+
+#access {
+  background-image: url(../imag/acces-haikei.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 12% 0;
 }
