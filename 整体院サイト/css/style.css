@@ -206,6 +206,7 @@ button {
 .tag {
   background-color: #468459;
   font-weight: normal;
+  padding: 0.3rem 0.7rem;
 }
 
 .oshirase {
@@ -318,6 +319,8 @@ button {
   font-size: 24px;
   color: #468459;
   margin: 1rem 0 3rem;
+  z-index: 2;
+  position: relative;
 }
 
 .course-naiyo {
@@ -372,17 +375,20 @@ button {
 .voice-nakami {
   max-width: 878px;
   margin: 0 auto;
+  position: relative;
 }
 
 .voice-icon {
   text-align: center;
-  /* background-color: #ffffff;
+  background-color: #ffffff;
   width: 500px;
-  height: 100px;
+  height: 400px;
   position: absolute;
-  top: 2680px;
-  left: 30%;
-  border-radius: 50% 50% 0 0; */
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50% 50% 0 0;
+  padding-top: 60px;
 }
 
 .voice-icon::before {
@@ -400,11 +406,13 @@ button {
 .voice-naiyo {
   display: flex;
   justify-content: space-between;
-  width: calc(100%/3);
+  z-index: 2;
+  position: relative;
 }
 
 .v-naiyo-img {
   border-radius: 50%;
+  width: 100%;
 }
 
 .v-naiyo-title {
@@ -419,12 +427,24 @@ button {
 .v-naiyo-nakami {
   font-family: Noto Sans JP;
   font-size: 18px;
+  text-align: left;
 }
+
+.voice-hidari,
+.voice-naka,
+.voice-migi{
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 0 1rem;
+}
+
+
 
 
 /* アクセス */
 .ac-icon {
   text-align: center;
+  padding: 3rem 0;
 }
 
 .ac-icon::before {
@@ -441,7 +461,104 @@ button {
 
 .ac-nakami {
   display: flex;
-  justify-content: space-around;
+  padding-bottom: 5%;
+  max-width: 1026px;
+  margin: 0 auto;
+}
+
+.ac-hidari {
+  width: calc(100%/2);
+}
+
+.eki {
+  font-family: Noto Sans JP;
+  font-size: 24px;
+  font-weight: bold;
+  color: #468459;
+}
+
+.jusyo {
+  font-family: Noto Sans JP;
+  font-size: 16px;
+  padding: 1rem 0;
+}
+
+.tel {
+  font-family: Noto Sans JP;
+  font-size: 16px;
+  font-weight: bold;
+  color: #468459;
+}
+
+.tel > span {
+  font-family: Noto Sans JP;
+  font-size: 24px;
+  font-weight: bold;
+  color: #468459;
+}
+
+.ac-bu {
+  background-color: #1B9240;
+}
+
+/* 営業時間の表 */
+.eigyo {
+  display: flex;
+  padding: 1rem 0 2rem;
+}
+
+.eigyo-jikan,
+.eigyo-yobi {
+  text-align: center;
+}
+
+.eigyo-title {
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #468459;
+  border: 1px solid #DDDDDD;
+  padding: 0.5rem 0.8rem;
+}
+
+.eigyo-umu {
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-weight: bold;
+  color: #468459;
+  background-color: #ffffff;
+  border: 1px solid #DDDDDD;
+  padding: 0.5rem;
+}
+
+.eg-ra1 {
+  border-radius: 5px 0 0 0;
+}
+
+.eg-ra2 {
+  border-radius: 0 5px 0 0;
+}
+
+.eg-ra3 {
+  border-radius: 0 0 0 5px;
+}
+
+.eg-ra4 {
+  border-radius: 0 0 5px 0;
+}
+
+.ac-migi {
+  position: relative;
+  width: calc(100%/2);
+}
+
+.ac-migi iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #access {
@@ -449,5 +566,32 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  padding: 12% 0;
+  padding-top: 12%;
+}
+
+/* 下部メニュー */
+#footer {
+  display: flex;
+  padding: 8% 0 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-shita > nav > ul > li > a {
+  font-family: Noto Sans JP;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+.copy {
+  text-align: center;
+  /* position: fixed;
+  bottom: 0; */
+  padding: 0.6rem 0;
+  background-color: #468459;
+  color: #ffffff;
+  font-family: Noto Sans JP;
+  font-size: 12px;
+  font-weight: 400;
 }
