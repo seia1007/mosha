@@ -641,7 +641,8 @@ button {
   /* コース */
   .course-naiyo {
     display: block;
-    justify-content: center;
+    /* justify-content: center; */
+    /* margin: 0 auto; */
   }
 
   /* お客様の声 */
