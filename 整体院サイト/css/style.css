@@ -252,17 +252,21 @@ button {
 }
 
 .tugihe {
+  text-align: right;
+}
+
+.tugihe > a {
   color: #000;
   border: solid 1px black;
   border-radius: 5px;
   padding: 0.2rem 1rem;
-  float: right;
 }
 
 /* 右側 */
 .concept-migi {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* コンセプト背景 */
@@ -330,6 +334,7 @@ button {
 
 .naiyo-img {
   border-radius: 24px;
+  width: 100%;
 }
 
 .naiyo-title {
@@ -627,22 +632,37 @@ button {
 
   /* コンセプト */
   #about-nakami {
-    display: block;
+    display: flex;
     max-width: 800px;
     margin: 0 auto;
+    flex-direction: column-reverse;
+    padding: 0 5%;
   }
 
   .haikei-title {
     font-size: 4.5rem;
-    top: 3%;
-    left: 6%;
+    top: 38%;
+    left: -18px;
+  }
+
+  .tugihe {
+    text-align: center;
+  }
+
+  .tugihe > a,
+  .tugihe-center > a,
+  .oshirase {
+    color: #0C4324;
   }
 
   /* コース */
   .course-naiyo {
     display: block;
-    /* justify-content: center; */
-    /* margin: 0 auto; */
+    padding: 5%;
+  }
+
+  .naiyo-hidari {
+    padding-bottom: 10%;
   }
 
   /* お客様の声 */
@@ -657,6 +677,15 @@ button {
     width: 100%;
   }
 
+  .voice-hidari,
+  .voice-naka {
+    padding-bottom: 15%;
+  }
+
+  .v-naiyo-img {
+    width: 300px;
+  }
+
   .voice-icon {
     width: 300px;
     height: 250px;
@@ -667,11 +696,36 @@ button {
   /* アクセス */
   .ac-nakami {
     display: block;
+    padding: 0 5%;
   }
 
   .ac-hidari {
     width: 100%;
+  }
 
+  .ac-migi {
+    position: relative;
+    width: 100%;
+    padding: 5% 0;
+  }
+
+  .ac-migi iframe {
+    position: static;
+    width: 100%;
+    height: 300px;
+  }
+
+  .eigyo-title,
+  .eigyo-umu {
+    font-size: 10px;
+  }
+
+  .eigyo-title {
+    padding: 0.5rem;
+  }
+  
+  .eigyo-umu {
+    padding: 0.3rem;
   }
 
   /* 下部メニュー */
